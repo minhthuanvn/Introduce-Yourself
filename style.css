@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
     background-color: rgb(244, 191, 148); 
@@ -12,23 +12,27 @@ header {
     text-align: center;
     
 }
+img {
+    /*hình ảnh responsive và không bị bể*/
+    max-width: 150px;
+    border-radius: 35%;
+    height: 180;
+  }
 
 main {
     padding: 20px;
 }
+
+:root {
+    /*setup variable*/
+    --smooth: all 0.3s ease-in;
+  }
 
 .about-me {
     display: justify;
     align-items: center;
     margin-bottom: 20px;
     
-}
-
-.about-me img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-right: 20px;
 }
 
 .about-me h2 {
@@ -57,31 +61,31 @@ main {
     margin-bottom: 5px;
 }
 
-.projects h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
-}
  
- 
-
-.contact img {
-    display: block;
-    align-items: center;
-    margin-top: 10px;   
-}
-
-.contact button {
-    display: block;
-    align-items: center;
-    margin-top: 10px;
-}
- 
-
 form{
     border-style: solid;
-    border-color: aqua;
+    border-color: rgb(210, 132, 23);
     padding: 10px;
     width: 400px;
+    border-radius: 10%;
+    margin-top: 10px;
 }
+
+form input, textarea, button{
+    text-align: center;
+    text-align: center;
+    color: rgb(33, 33, 28);
+    background-color: var(--gray);
+    padding: 0.8rem 2.5rem; /*1rem = 16px*/
+    border: solid 3px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: var(--smooth);
+    margin: 5px;
+}
+
+form textarea{
+    margin-top: 10px;
+}
+
 /*abc
